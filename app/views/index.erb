@@ -1,0 +1,11 @@
+<h1>List of Shows</h1>
+<ul>
+
+  <% @data.each do |row| %>
+    <li> Title: <%= row['title'] %> </li>
+    <li> Network: <%= row['network'] %> </li>
+    <li> Starting Year: <%= row['starting_year'] %> </li>
+    <li> Synopsis: <%= row['synopsis'] %> </li>
+    <li> Genre: <%= row['genre'] %> </li>
+  <%end%>
+</ul>
